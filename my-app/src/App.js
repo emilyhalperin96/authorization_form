@@ -18,6 +18,18 @@ function Contact() {
     </form>
   )
 
+  const contactInfo = (
+    <ul>
+          <li>
+            client@example.com
+          </li>
+          <li>
+            555.555.5555
+          </li>
+      </ul>
+  );
+  
+
   return (
       <div id="authorization">
         <h1>
