@@ -11,9 +11,20 @@ function Contact() {
     setAuthorized(auth)
   }
 
+  const login = (
+    <form action='#'>
+      <input type='password' placeholder='Password'></input>
+      <input type='submit'></input>
+    </form>
+  )
+
   return (
       <div id="authorization">
-        <h1>Contact</h1>
+        <h1>
+          {
+          authorized ? 'Contact': 'Enter the Password'
+          }
+        </h1>
         <ul>
           <li>
             client@example.com
